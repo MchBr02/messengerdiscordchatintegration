@@ -1,0 +1,19 @@
+{
+  "name": "messenderdiscordchatintegration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "messenger"
+  ],
+  "author": "https://github.com/MchBr02",
+  "license": "ISC",
+  "dependencies": {
+    "geckodriver": "^4.0.0",
+    "selenium-webdriver": "^4.9.0"
+  }
+}
