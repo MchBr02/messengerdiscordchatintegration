@@ -13,7 +13,9 @@
   "author": "https://github.com/MchBr02",
   "license": "ISC",
   "dependencies": {
+    "discord.js": "^14.11.0",
+    "fs": "^0.0.1-security",
     "geckodriver": "^4.0.0",
-    "selenium-webdriver": "^4.9.0"
+    "selenium-webdriver": "^4.9.2"
   }
 }
