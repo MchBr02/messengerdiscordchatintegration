@@ -4,8 +4,9 @@ This app will synchronise your discord chat with messenger chat.
 
 To run this program:
 1. Make sure that nodejs is installed on your machine,
-2. edit credentials.json
+2. edit `credentials.json`
    Example:
+   ```
     {
       "fbUsername": "your_facebook_username/E-mail",
       "fbPassword": "facebook_password",
@@ -13,5 +14,6 @@ To run this program:
       "dcBotToken": "Discord_bot_token",
       "dcChannelID": "Discord_channel_ID"
     }
-3. type: "node install"
-4. type: "node index.js"
+   ```
+4. type: "`$ node install`"
+5. type: "`$ node index.js`"
