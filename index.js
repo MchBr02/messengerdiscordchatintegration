@@ -2,12 +2,36 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
 const firefox = require('selenium-webdriver/firefox');
 const credentials = require('./credentials.json');
 const fs = require('fs');
+const { spawn } = require('child_process');
+
+
+const executeScript = () => {
+  // Spawn a new child process to run the script
+  const dcBotProcess = spawn('node', ['dcBot.js']);
+
+  // Print the output of the script
+  dcBotProcess.stdout.on('data', (data) => {
+    console.log(`Script output: ${data}`);
+  });
+
+  // Print any errors that occur during script execution
+  dcBotProcess.stderr.on('data', (data) => {
+    console.error(`Script error: ${data}`);
+  });
+
+  // Handle the script process exit
+  dcBotProcess.on('close', (code) => {
+    console.log(`Script exited with code ${code}`);
+  });
+};
+
 
 (async function example() {
   console.log("Starting messenger to discord integration script...");
 
   let options = new firefox.Options();
   options.addArguments("-private");
+  options.headless(); // Enable headless mode
   // Set the path to the Firefox binary if needed
   // options.setBinary('path/to/firefox');
 
@@ -77,6 +101,9 @@ const fs = require('fs');
 
       // Add a delay before the next iteration
       await driver.sleep(5000);
+
+      // Call the function to execute the discord script
+      executeScript();
     }
   }
 
