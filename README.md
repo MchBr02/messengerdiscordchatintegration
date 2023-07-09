@@ -15,5 +15,5 @@ To run this program:
       "dcChannelID": "Discord_channel_ID"
     }
    ```
-4. type: "`$ node install`"
-5. type: "`$ node index.js`"
+4. type: "`$ npm install`"
+5. type: "`$ npm start`"
