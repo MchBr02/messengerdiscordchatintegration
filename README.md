@@ -3,7 +3,11 @@ This app will synchronise your discord chat with messenger chat.
 (Currently it will copy messages from messenger into a discord chat)
 
 To run this program:
-1. Make sure that "nodejs" and "npm" is installed on your machine,
+1. Make sure that "firefox-esr", "nodejs" and "npm" is installed on your machine,
+   - `sudo apt update`
+   - `sudo apt install firefox-esr`
+   - `sudo apt install nodejs`
+   - `sudo apt install npm`
 2. edit `credentials.json`
    Example:
    ```
