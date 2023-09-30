@@ -2,7 +2,7 @@
 This app will synchronise your discord chat with messenger chat.
 (Currently it will copy messages from messenger into a discord chat)
 
-<hr>
+
 # Run it on Debian:
 1. Make sure that "firefox-esr", "nodejs" and "npm" is installed on your machine,
    - `sudo apt update`
