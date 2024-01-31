@@ -5,7 +5,7 @@ const fs = require('fs');
 const { spawn } = require('child_process');
 
 // ServiceBuilder configuration for GeckoDriver
-const service = new firefox.ServiceBuilder('/usr/local/bin/geckodriver');
+const service = new firefox.ServiceBuilder('./geckodriver');
 
 // Uncomment the next line if you want to see geckodriver output in the console
 // service.setStdio('inherit');
